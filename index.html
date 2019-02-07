@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+
+//Nested If/Else Score Program
+var score = 55;
+
+if (score > 92) {
+    console.log("Excellent");
+} else if (score <= 92) {
+    if (score >= 83) {
+        console.log("Good")
+    }
+} if (score <= 82) {
+    if (score >= 74) {
+        console.log("Okay");
+    }
+} if (score <= 73) {
+    if (score >= 60) {
+        console.log("Uh oh");
+    }
+} if (score < 60) {
+    console.log("Doom is upon you");
+}
+
+
+
+
+//if/else with && for Score Program
+var score = 50;
+
+if (score > 92) {
+    console.log("Excellent");
+} else if (score <= 92 && score >=83) {
+
+    console.log("Good");
+} else if (score <=82 && score >= 74){
+    
+   console.log("Okay");
+}  else if (score < 74 && score >=60) {
+        console.log("Uh, oh");
+} else {
+        console.log("Doom is upon you");
+}
+
+
+//Score Switch Statement
+var score = 55;
+
+switch (true){
+    case (score >= 92):
+        console.log ("Excellent");
+        break;
+    case (score < 92 && score >= 83):
+        console.log("Good");
+        break;
+    case (score <= 82 && score >= 74):
+        console.log("Okay");
+        break;
+    case (score <= 73 && score >= 60):
+        console.log("Uh oh");
+        break;
+    case (score < 60):
+        console.log("Doom is upon you");
+        break;
+}
+
+
+
+
+	</script>
+
+</body>
+</html>
